@@ -13,9 +13,10 @@ Here we are using Windscribe VPN
 
 **Step 2:** Open your Terminal and add the windscribe signing key to apt using following command.
 
-'''
+<pre><code>
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
-'''
+</pre> </code>
+
 
 **Step 3:** Add the repository to your source.list using following command
 
