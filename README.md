@@ -1,7 +1,9 @@
 # AutomateVPN
 
 ## What is VPN ?
+
 VPN stands for **Virtual Private Network** , it is a technology that creates a safe and encrypted connectionover a less secure network, such as **Internet**.
+
 Basically it connects you to a remote server(another country) by changing your **IP Address**
 and it use tunneling protocols to establish a secure connection.
 
@@ -10,6 +12,7 @@ and it use tunneling protocols to establish a secure connection.
 Here we are using Windscribe VPN
 
 **Step 1:** Create a free account on Windscribe.Visit <a href="https://windscribe.com/">Windscibe</a> and register yourself.
+
 
 **Step 2:** Open your Terminal and add the windscribe signing key to apt using following command.
 
@@ -31,11 +34,13 @@ echo 'deb https://repo.windscribe.com/ubuntu bionic main' | sudo tee /etc/apt/so
 sudo apt-get update
 </pre></code>
 
+
 **Step 5:** Install windscribe-cli using following command.
 
 <pre><code>
 sudo apt-get install windscribe-cli
 </pre></code>
+
 
 **Step 6:** Login to windscribe with your credentials used in Step 1 while creating account on Windscribe.
 
@@ -63,11 +68,12 @@ windscribe connect
 it will change your IP Address and connects you to a different server
 
 
-**3.**To disconnect from windscribe
+**3.** To disconnect from windscribe
 
 <pre><code>
 windscribe disconnect
 </pre></code>
+
 
 **4.** To print VPN services Locations 
 
@@ -75,11 +81,13 @@ windscribe disconnect
 windscribe locations
 </pre></code>
 
+
 **5.** To connect to a specific Server
 
 <pre><code>
 windscribe connect <short Name>
 </pre></code>
+
 
 **6.** To logout from windscribe
 
@@ -100,6 +108,7 @@ gedit AutomateVPN.py
 
 **Step 2:** Copy code from Automate_VPN.py and save it to AutomateVPN.py
 
+
 **Step 3:** Close the Terminal , Reopen the terminal and type the following Command
 
 <pre><code>
@@ -110,13 +119,18 @@ windscribe login
 python3 AutomateVPN.py
 </pre></code>
 
+
 This will run the program and it will change your IP Address every 15-20 minutes.
 
 To disconnect VPN
 Close the Terminal , Reopen the terminal and type the following Command
 
+
 <pre><code>
 windscribe disconnect
 </pre></code>
+
+
+Credit - **Geeks for Geeks**
 
 
